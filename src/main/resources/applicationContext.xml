@@ -7,6 +7,9 @@
 
    <bean id="twitterSearchTask" class="com.seedcloud.TwitterSearchTask">
        <property name="keyword" value="hello"/>
+       <property name="searchResultDao" ref="searchResultDao"/>
    </bean>
+   
+   <bean id="searchResultDao" class="com.seedcloud.dao.SearchResultDaoMock"/>
 
 </beans>
